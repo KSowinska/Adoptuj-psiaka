@@ -11,7 +11,7 @@
 
 body {
 	
-	background-image: url("/My Dog Paws.jpg");
+	background-image: url("../images/My Dog Paws.jpg");
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -63,7 +63,7 @@ body {
 .dogImg {
 	width: 32px;
 	height: 32px;
-	background-image: url("/dog.png");
+	background-image: url("../images/dog.png");
 	position: absolute;
 	z-index:2;
 	margin-left: 370px;
@@ -73,7 +73,7 @@ body {
 .dogImg2 {
 	width: 32px;
 	height: 32px;
-	background-image: url("/dog.png");
+	background-image: url("../images/dog.png");
 	position: absolute;
 	z-index:2;
 	margin-left: 1100px;
