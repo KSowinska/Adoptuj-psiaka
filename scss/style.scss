@@ -1,11 +1,18 @@
 
 @import "_variable", "_media";
 
+@include fontFace('puppybelliesmedium', '../fonts/puppybellies');
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	
+}
+
+section {
+	font-family: $main_font;
+
 }
 
 
@@ -15,7 +22,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	position: relative;
-	font-family: $main_font;
+	
 }
 
 .menu_bar {
@@ -27,13 +34,13 @@ body {
 	z-index: 1;
 	width: 100%;
 	border: 1px solid #6C7A89;
+	font-family: puppybelliesmedium, Tahoma, Arial;
 
 	li {
 
 		line-height: 40px;
 		height: 50px;
-		font-size: 20px;
-		
+		font-size: 30px;
 		display: inline-block;
 		margin-right: 20px;
 	}
@@ -50,11 +57,11 @@ body {
 
 	a:hover
 	{
-		background-color: #59ABE3;
+		background-color: #ECF0F1;
 	}
 
 	a.active {
-		background-color: #fff;
+		background-color:#BFBFBF;
 		color: #444;
 		cursor: default;
 	}
@@ -66,7 +73,7 @@ body {
 	background-image: url("../images/dog.png");
 	position: absolute;
 	z-index:2;
-	margin-left: 370px;
+	margin-left: 220px;
 
 }
 
@@ -76,7 +83,7 @@ body {
 	background-image: url("../images/dog.png");
 	position: absolute;
 	z-index:2;
-	margin-left: 1100px;
+	margin-left: 1270px;
 
 }
 
