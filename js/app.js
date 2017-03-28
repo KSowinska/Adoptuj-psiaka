@@ -12,10 +12,11 @@ $(function() {
 
 
 	});
-
-	var whatShouldKnow = $(".main").find("#whatShouldKnow");
-	$(".info").on("click", function(){
-		whatShouldKnow.toggle();
-	}); */
+	*/
+	
+	var linki = $(".main").find(".list");
+	$(".links").on("click", function(){
+		linki.toggle();
+	}); 
 });
 

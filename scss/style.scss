@@ -86,7 +86,7 @@ body {
 	margin-left: 1270px;
 
 }
-
+//po co ta strona
 #whatFor {
 	//display: none;
 	width: 790px;
@@ -100,13 +100,13 @@ body {
 	padding: 20px 5px 20px 5px;
 	font-size: 20px;
 	//opacity: 0.5;
-	position:fixed;
-	//float: right;
+	position:absolute;
+	left: 250px;
 
 
 }
 
-
+//czy jestem gotowy na psa
 #whatShouldKnow {
 	//display: none;
 	width: auto;
@@ -156,4 +156,47 @@ footer {
 	margin: 0 auto;
 
 
+}
+//pomocne linki
+.list {
+
+	display: none;
+	list-style-type: none; //dlaczego nie działa none? 
+	text-align: center;
+	width: 790px;
+	height: auto;
+	border-radius: 15px;
+	border: 5px solid #446CB3;
+	background-color: #E4F1FE;
+	margin: 50px 150px 0 150px;
+	padding: 20px 5px 20px 5px;
+	font-size: 20px;
+	position: relative;
+	
+	a {
+		text-decoration: none;
+		color: black;
+		transition: .3s background-color;
+	}
+	a:hover
+	{
+		background-color: #ECF0F1;
+	}
+
+	a.active {
+		background-color:#BFBFBF;
+		color: #444;
+		cursor: default;
+	}
+
+}
+
+#collage {
+
+	width: 600px;
+	height: 350px;
+	position: center;
+	margin: 250px 150px 0 150px;
+	left: 350px;
+	position: relative;
 }
