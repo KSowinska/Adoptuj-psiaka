@@ -193,10 +193,74 @@ footer {
 
 #collage {
 
-	width: 600px;
+	width: 650px;
 	height: 350px;
 	position: center;
 	margin: 250px 150px 0 150px;
 	left: 350px;
 	position: relative;
+}
+
+#dog3 {
+
+	width: 550px;
+	height: 450px;
+	margin-top: 50px;
+}
+
+#batman {
+
+	width: 550px;
+	height: 450px;
+	margin-top: 55px;
+
+}
+
+//slider 
+
+
+
+.slider {
+	height: 500px;
+	overflow: hidden;
+	width: 435px;
+	margin-top: 100px;
+	
+}
+
+.slider ul {
+	list-style: none;
+	position: relative;
+	font-size: 0;
+
+}
+
+.slider li{
+	display: inline-block;
+	
+}
+
+#kudlaty {
+	display: block;
+	margin: 0 auto;	
+	
+}
+
+#owczarek {
+	display: block;
+	margin: 0 auto;	
+	
+
+}
+
+#kermit {
+	display: block;
+	margin: 0 auto;	
+
+}
+
+#chrupka {
+	display: block;
+	margin: 0 auto;	
+
 }
