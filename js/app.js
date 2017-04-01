@@ -1,12 +1,22 @@
 $(function() {
 
-	$('.owl-carousel').owlCarousel({
 
-		loop:true,
-		margin:10,
-		responsiveClass:true,
+	$(".rslides").responsiveSlides({
 
+		nav: false,
+		auto: true,
+		speed: 500,
+		timeout: 4000,
+		pager: false, 
+		namespace: "callbacks",
+		maxwidth: 750,
 	});
+	
+
+
+
+
+
 
 
 //slider 
