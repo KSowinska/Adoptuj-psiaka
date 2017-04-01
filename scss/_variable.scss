@@ -14,3 +14,16 @@ $main_font:  'Caveat Brush', cursive;
 		font-weight: $weight;
 	}
 }
+
+
+@mixin nameGeneratorbutton {
+	-webkit-border-radius: 9;
+	-moz-border-radius: 9;
+	border-radius: 9px;
+	color: #ffffff;
+	font-size: 20px;
+	background: #3498db;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+}
+

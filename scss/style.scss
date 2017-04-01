@@ -1,5 +1,6 @@
 
-@import "_variable", "_media";
+@import "_variable" ;
+@import "_media";
 
 @include fontFace('puppybelliesmedium', '../fonts/puppybellies');
 
@@ -88,7 +89,7 @@ body {
 }
 //po co ta strona
 #whatFor {
-	//display: none;
+	
 	width: 790px;
 	height: auto;
 	border-radius: 15px;
@@ -108,7 +109,7 @@ body {
 
 //czy jestem gotowy na psa
 #whatShouldKnow {
-	//display: none;
+	
 	width: auto;
 	height: auto;
 	border-radius: 15px;
@@ -129,10 +130,7 @@ h2 {
 	padding-top: 10px;
 }
 
-.main {
 
-
-}
 
 footer {
 
@@ -160,8 +158,6 @@ footer {
 //pomocne linki
 .list {
 
-	display: none;
-	list-style-type: none; //dlaczego nie działa none? 
 	text-align: center;
 	width: 790px;
 	height: auto;
@@ -171,7 +167,8 @@ footer {
 	margin: 50px 150px 0 150px;
 	padding: 20px 5px 20px 5px;
 	font-size: 20px;
-	position: relative;
+	position: absolute;
+	left: 250px;
 	
 	a {
 		text-decoration: none;
@@ -180,7 +177,7 @@ footer {
 	}
 	a:hover
 	{
-		background-color: #ECF0F1;
+		background-color: #BFBFBF;
 	}
 
 	a.active {
@@ -189,6 +186,11 @@ footer {
 		cursor: default;
 	}
 
+}
+//klasa ul listy linkow
+.link {
+	list-style-type: none; 
+	line-height: 35px; 
 }
 
 #collage {
@@ -204,14 +206,14 @@ footer {
 #dog3 {
 
 	width: 550px;
-	height: 450px;
+	height: 420px;
 	margin-top: 50px;
 }
 
 #batman {
 
 	width: 550px;
-	height: 450px;
+	height: 420px;
 	margin-top: 55px;
 
 }
@@ -223,23 +225,80 @@ footer {
 .slider {
 	height: 500px;
 	overflow: hidden;
-	width: 435px;
+	//width: 435px;
 	margin-top: 100px;
 	
 }
+
+/*
 
 .slider ul {
 	list-style: none;
 	position: relative;
 	font-size: 0;
+	width: 3000px;
 
 }
 
 .slider li{
 	display: inline-block;
+	width: 747px;
+
 	
 }
 
+.slider li img {
+	display: flex;
+	justify-content: center;
+}
+*/
+
+/*
+.slider { 
+	overflow: hidden;
+	margin-top: 100px;
+	height: 500px;
+	
+}
+
+
+.slider img {
+	//width:auto;
+	float: left;
+
+} 
+
+.slider ul {
+	width: 100%;
+}
+
+.slider li {
+	position: relative;
+	width: auto;
+	
+	left: 0;
+	margin: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 20s slidy infinite; 
+	
+}
+
+@keyframes slidy {
+	0% { left: 0%; }
+	20% { left: 0%; }
+	25% { left: -10%; }
+	45% { left: -100%; }
+	50% { left: -200%; }
+	70% { left: -200%; }
+	75% { left: -300%; }
+	95% { left: -300%; }
+	100% { left: -400%; }
+}
+*/
+
+
+//zdjęcia  z ready.html
 #kudlaty {
 	display: block;
 	margin: 0 auto;	
@@ -264,3 +323,45 @@ footer {
 	margin: 0 auto;	
 
 }
+
+//generator
+
+.generator {
+	min-height: 100%;
+	//margin: 0 auto;
+	display: flex;
+	
+}
+
+#female {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 70px;
+	margin-right: 10px;
+	@include nameGeneratorbutton ;
+
+}
+
+
+#female:hover {
+	background: #3cb0fd;
+	text-decoration: none;
+} 
+
+
+#male {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 70px;
+	@include nameGeneratorbutton ;
+
+
+}
+
+#male:hover {
+	background: #3cb0fd;
+	text-decoration: none;
+} 
+

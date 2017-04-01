@@ -1,29 +1,20 @@
 $(function() {
 
-	//$(".info").on("mouseenter", function(){
-	//	console.log("działa js <3");
-	//});
+	$('.owl-carousel').owlCarousel({
 
-/*	var whatFor = $(".main").find("#whatFor");
-
-	$(".why").on("click", function(){
-		whatFor.toggle();
-		//console.log("dziala");
-
+		loop:true,
+		margin:10,
+		responsiveClass:true,
 
 	});
-	*/
-	
-	var linki = $(".main").find(".list");
-	$(".links").on("click", function(){
-		linki.toggle();
-	}); 
+
 
 //slider 
 
+/*
 function slider() {
-	var nextBtn = $("#nextPicture");
-	var prevBtn = $("#prevPicture");	
+	//var nextBtn = $("#nextPicture");
+	//var prevBtn = $("#prevPicture");	
 	var liAll = $(".slider").find("li");
 	var number = $(".slider").find("img").index(0);
 	var width1 = liAll.first().width();
@@ -31,16 +22,15 @@ function slider() {
 	var imagesNumber = images.length;
 	var ul = $(".slider").find("ul");
 	var cloneLi1 = liAll.first().clone()
+	var cloneLi7 = liAll.last().clone()
 
 	cloneLi1.appendTo(ul);
 
-	var cloneLi8 = liAll.last().clone()
-
-	cloneLi8.prependTo(ul);
+	cloneLi7.prependTo(ul);
 
 
-	console.log(nextBtn,prevBtn,liAll,number,width1,imagesNumber,images,ul);
-	console.log(cloneLi1, cloneLi8);
+	//console.log(nextBtn,prevBtn,liAll,number,width1,imagesNumber,images,ul);
+	//console.log(cloneLi1, cloneLi7);
 
 
 
@@ -88,7 +78,7 @@ prevBtn.on("click", function(){
 slider();
 
 
-
+*/
 
 
 

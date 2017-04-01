@@ -1,15 +1,70 @@
 
 
-@media (max-width:1292px) {
+@media (max-width:1296px) {
 	.dogImg  {
 		display: none;
 	} 
 
 }
-@media (max-width:1292px) {
+@media (max-width:1296px) {
 	
 	.dogImg2 {
 		display: none;
 	} 
 
 }
+
+@media only screen and (max-width: 400px) {
+	* {
+		font-size: 13px;
+	}
+	article {
+		//width: 80%;
+	}
+
+	.slider {
+		height: 50%;
+		margin-top: 15%;
+	}
+	.photo {
+		//margin-top: 100px;
+		padding-top: 70%;
+	}
+
+	img#dog3 {
+		width: 30%;
+		height: 30%;
+		margin-left : 0px;
+		
+		display: inline-block;
+	}
+
+	img#batman {
+		width: 30%;
+		height: 30%;
+		margin-left : 0px;
+		
+		display: inline-block;
+	}
+
+	#whatShouldKnow {
+		padding-top: 60px;
+		width: 50%;
+		
+		
+		h2 {
+			font-size: 14px;
+		}
+
+		
+	}
+	#whatShouldKnow img {
+		display: none;
+	}
+
+}
+/*
+	@media(min-width:576px){}
+	@media(min-width:768px){}
+	@media(min-width:992px){}
+	@media(min-width:1200px){} */
