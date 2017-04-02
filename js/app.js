@@ -1,5 +1,5 @@
 $(function() {
-
+	//slider
 
 	$(".rslides").responsiveSlides({
 
@@ -13,82 +13,54 @@ $(function() {
 	});
 	
 
+//generator imion 
+
+var sheButton = $(".div-generator").find("#female");
+var heButton = $(".div-generator").find("#male");
 
 
 
+var femaleArray = [  "Afryka",  "Aida",  "Alfa", "Ambra", "Amanda", "Andzia",  "Aria", "Atena", "Aura", "Azja", "Bajka" , "Balbina", "Beksa", "Bella",  "Beta", "Beza", "Bianka", "Birka", "Bierka", "Blanka", "Bona",  "Borówka", "Bójka", "Bramka", "Brenda", "Bryza", "Buba", "Bunia", "Burza", "Busia" , "Madam",
+"Armia",  "Awaria",  "Basta",  "Czili", "Mafia",  "Era", "Furia",  "Gama",  "Horka",  "Iryda",  "Narewka",  "Sparta",   "Teba",  "Xara", "Xena",  "Eta",  "Etna",  "Fuga", "Furia",  "Gama",   "Hera", "Horka",  "Kara",  "Kartagina",  "Kobra",  "Ksena", "Leda", "Magnolia", "Mona", "Petra", "Sparta",  "Teba",  "Uza",  "Kaja", "Kalka", "Kama", "Karma", "Karo", "Kawa", "Kita", "Kiwi", "Kleo",  "Klimka",  "Kobra", "Koka", "Kora", "Korka", "Korsa", "Kosa"];
+var maleArray = [ "Agat", "Afro", "Ajaks", "Akryl", "Alf", "Alik",  "Amant", "Amor", "Antek", "Aramis", "Ares", "Argus", "Atos", "Apsik",  "Aron", "Asfalt", "Raf",  "Rik",  "Robin",  "Rudi", "Skip",  "Snoopy",  "Szogun", "Tarzan",  "Tedi", "Tolek", "Tutuś",  "Wifi",  "Wigor",  "Wycior",  "Yogi",   "Cezar",  "Dark",  "Diablo",  "Disel", "Fidel",  "Hunter",  "Koks",  "Lester",    "Portos",  "Thor",  "Turbo", "Figo", "Tajfun", "Toffi",
+"Macho", "Mad",	"Madox", "Madras", "Majlo", "Major","Makao", "Makbet","Mako","Maks","Makumba"
+]; 
 
 
-
-//slider 
-
-/*
-function slider() {
-	//var nextBtn = $("#nextPicture");
-	//var prevBtn = $("#prevPicture");	
-	var liAll = $(".slider").find("li");
-	var number = $(".slider").find("img").index(0);
-	var width1 = liAll.first().width();
-	var images = $(".slider").find("img");
-	var imagesNumber = images.length;
-	var ul = $(".slider").find("ul");
-	var cloneLi1 = liAll.first().clone()
-	var cloneLi7 = liAll.last().clone()
-
-	cloneLi1.appendTo(ul);
-
-	cloneLi7.prependTo(ul);
+var articleG = $(".articleGenerator");
+var randomIndexFemale = Math.round(Math.random() * femaleArray.length -1);
+var randomIndexMale = Math.round(Math.random() * maleArray.length -1 );	
 
 
-	//console.log(nextBtn,prevBtn,liAll,number,width1,imagesNumber,images,ul);
-	//console.log(cloneLi1, cloneLi7);
+		//przycisk male
+		heButton.on("click", function(){
+			var randomIndexMale = Math.round(Math.random() * maleArray.length -1 );	
+			if($('#dogname').length != 0){
+				
+				$('#dogname').text(maleArray[randomIndexMale]);
+			} else {
+				
+				var newDivMale = $("<div>", {id: "dogname"});	
+				$(".articleGenerator").append(newDivMale);
+				newDivMale.text(maleArray[randomIndexMale]);
+			}
 
 
-
-ul.css("left", "-="+width1+ "px"); //żeby nie widzieć klona ostatniego przesuwam 
-//calą listę w prawo
-
-nextBtn.on("click", function(){
-	number++
-	//console.log("klikam next ");
-	ul.animate ({
-		"left": "-="+width1+"px"
-	}, function() {
+		})
 		
-		if (number -2 >= liAll.length - 2) {
-			number = 0;
-			ul.css("left", - width1 + "px");
-		}
-	})
 
-	
+		//przycisk female 
+		sheButton.on("click", function(){
+			var randomIndexFemale = Math.round(Math.random() * femaleArray.length -1);
+			if($('#dogname').length != 0){
+				$('#dogname').text(femaleArray[randomIndexFemale]);
+			}else{
 
-});
-
-prevBtn.on("click", function(){
-	number--
-	
-	//console.log("klikam prev ");
-	ul.animate ({
-		"left": "+="+width1+"px"
-	}, function() {
-		
-		if (number <=-1) {
-			number = liAll.length -1;
-			ul.css("left", (width1*imagesNumber)*-1);
-		}
-	})
-
-	
-
-});
-
-
-};
-
-slider();
-
-
-*/
+				var newDivFemale = $("<div>", {id: "dogname"});
+				$(".articleGenerator").append(newDivFemale);
+				newDivFemale.text(femaleArray[randomIndexFemale]);
+			}
+		})
 
 
 
@@ -97,5 +69,12 @@ slider();
 
 
 
-});
+
+
+
+
+
+
+
+	});
 

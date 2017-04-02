@@ -19,7 +19,7 @@ section {
 
 body {
 	
-	background-image: url("../images/My Dog Paws.jpg");
+	background-image: url("/images/My Dog Paws.jpg");
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -71,7 +71,7 @@ body {
 .dogImg {
 	width: 32px;
 	height: 32px;
-	background-image: url("../images/dog.png");
+	background-image: url("/images/dog.png");
 	position: absolute;
 	z-index:2;
 	margin-left: 220px;
@@ -81,7 +81,7 @@ body {
 .dogImg2 {
 	width: 32px;
 	height: 32px;
-	background-image: url("../images/dog.png");
+	background-image: url("/images/dog.png");
 	position: absolute;
 	z-index:2;
 	margin-left: 1270px;
@@ -134,17 +134,26 @@ h2 {
 
 footer {
 
-	font-size: 10px;
-	font-weight: bold;
+	font-size: 15px;
+	
 	position:fixed;
 	width: 100%;
 	padding-top: 20px;
 	color: black;
 	height: 60px;
-
+	text-decoration: none;
 	bottom: 0;
 	text-align: center;
+	font-family: $main_font;
 
+	a {
+		color: black;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #DB0A5B;
+	}
 
 }
 
@@ -157,7 +166,7 @@ footer {
 }
 //pomocne linki
 .list {
-
+	display: flex;
 	text-align: center;
 	width: 790px;
 	height: auto;
@@ -190,7 +199,8 @@ footer {
 //klasa ul listy linkow
 .link {
 	list-style-type: none; 
-	line-height: 35px; 
+	line-height: 35px;
+
 }
 
 #collage {
@@ -262,45 +272,82 @@ footer {
 
 //generator
 
-.generator {
+.articleGenerator {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.div-generator {
 	min-height: 100%;
 	//margin: 0 auto;
 	display: flex;
-	
+	justify-content: center;
+	flex-wrap: wrap;
+
 }
 
 #female {
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	margin-top: 70px;
 	margin-right: 10px;
 	@include nameGeneratorbutton ;
-
+	background-image: url("/images/she.png");
+	background-size: cover;
+	background-position: center;
+	font-family: puppybelliesmedium, Tahoma, Arial;
+	font-size: 25px;
 }
 
 
 #female:hover {
-	background: #3cb0fd;
+	
 	text-decoration: none;
+	
+	width: 290px;
 } 
+
+#dogname {
+	width: 200px;
+	height: 70px;
+	color: black;
+	margin-top: 270px;
+	font-size: 45px;
+	display: flex;
+	border-radius: 15px;
+	border: 5px solid #446CB3;
+	background-color: #E4F1FE;
+	text-align: center;
+	padding-left: 15px;
+
+}
+
 
 
 #male {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	
 	margin-top: 70px;
 	@include nameGeneratorbutton ;
-
-
+	background-image: url("/images/he.png");
+	background-size: cover;
+	background-position: center;
+	font-family: puppybelliesmedium, Tahoma, Arial;
+	font-size: 25px;
 }
 
 #male:hover {
-	background: #3cb0fd;
+	
+	width: 280px;
 	text-decoration: none;
 } 
 
+.div-generator p {
+	margin-top: 250px;
+	display: inline-block;
+
+}
 
 .rslides {
 	position: relative;
