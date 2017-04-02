@@ -19,7 +19,7 @@ section {
 
 body {
 	
-	background-image: url("/images/dogpaws.jpg");
+	background-image: url("../images/dogpaws.jpg");
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -71,7 +71,7 @@ body {
 .dogImg {
 	width: 32px;
 	height: 32px;
-	background-image: url("/images/dog.png");
+	background-image: url("../images/dog.png");
 	position: absolute;
 	z-index:2;
 	margin-left: 220px;
@@ -81,7 +81,7 @@ body {
 .dogImg2 {
 	width: 32px;
 	height: 32px;
-	background-image: url("/images/dog.png");
+	background-image: url("../images/dog.png");
 	position: absolute;
 	z-index:2;
 	margin-left: 1270px;
@@ -293,7 +293,7 @@ footer {
 	margin-top: 70px;
 	margin-right: 10px;
 	@include nameGeneratorbutton ;
-	background-image: url("/images/she.png");
+	background-image: url("../images/she.png");
 	background-size: cover;
 	background-position: center;
 	font-family: puppybelliesmedium, Tahoma, Arial;
@@ -330,7 +330,7 @@ footer {
 	
 	margin-top: 70px;
 	@include nameGeneratorbutton ;
-	background-image: url("/images/he.png");
+	background-image: url("../images/he.png");
 	background-size: cover;
 	background-position: center;
 	font-family: puppybelliesmedium, Tahoma, Arial;
