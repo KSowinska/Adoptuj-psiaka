@@ -23,6 +23,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	position: relative;
+	min-height: 100%;
 	
 }
 
@@ -136,15 +137,18 @@ footer {
 
 	font-size: 15px;
 	
-	position:fixed;
+	position:relative;
 	width: 100%;
 	padding-top: 20px;
 	color: black;
-	height: 60px;
+	height: 30px;
 	text-decoration: none;
 	bottom: 0;
 	text-align: center;
 	font-family: $main_font;
+	z-index: 10;
+	clear: both;
+
 
 	a {
 		color: black;
@@ -213,16 +217,16 @@ footer {
 	position: relative;
 }
 
-
+//zdjęcia z głównej
 #dog3 {
-
+	display: flex;
 	width: 550px;
 	height: 420px;
 	margin-top: 50px;
 }
 
 #batman {
-
+	display: flex;
 	width: 550px;
 	height: 420px;
 	margin-top: 55px;
