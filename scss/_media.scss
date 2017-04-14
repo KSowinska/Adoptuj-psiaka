@@ -1,20 +1,7 @@
 
 
-@media (max-width:1296px) {
-	.dogImg  {
-		display: none;
-	} 
 
-}
-@media (max-width:1296px) {
-	
-	.dogImg2 {
-		display: none;
-	} 
-
-}
-
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
 	* {
 		font-size: 13px;
 	}
@@ -50,6 +37,7 @@
 	#whatShouldKnow {
 		padding-top: 60px;
 		width: 50%;
+
 		
 		
 		h2 {
@@ -62,9 +50,14 @@
 		display: none;
 	}
 
+	#collage {
+		width: 70%;
+		margin: 0 auto;
+	}
+
+
+	#whatFor {
+		width: 50%;
+		margin: 0 auto;
+	}
 }
-/*
-	@media(min-width:576px){}
-	@media(min-width:768px){}
-	@media(min-width:992px){}
-	@media(min-width:1200px){} */

@@ -27,12 +27,70 @@ body {
 	
 }
 
+///tutaj klasa do wyswietlania menu
+nav ul.showMenu {
+	display: block;
+}
+
+@media (min-width: 375px) {
+	nav ul{
+		display: block;
+	}
+
+
+	nav ul	li {
+		display: inline-block;
+	}
+
+	button {
+		display: none;
+	}
+}
+
+
+nav button {
+	margin: 10px 0 0 10px;
+	
+	border-top: 1px solid #7d95a3;
+	background: #e3e3e3;
+	background: -webkit-gradient(linear, left top, left bottom, from(#dedede), to(#e3e3e3));
+	background: -webkit-linear-gradient(top, #dedede, #e3e3e3);
+	background: -moz-linear-gradient(top, #dedede, #e3e3e3);
+	background: -ms-linear-gradient(top, #dedede, #e3e3e3);
+	background: -o-linear-gradient(top, #dedede, #e3e3e3);
+	padding: 8.5px 17px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	box-shadow: rgba(0,0,0,1) 0 1px 0;
+	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	color: #2b1e2b;
+	font-size: 12px;
+	font-family: Georgia, serif;
+	text-decoration: none;
+	vertical-align: middle;
+}
+nav button :hover {
+	border-top-color: #9ba6ad;
+	background: #9ba6ad;
+	color: #0f080f;
+}
+nav button :active {
+	border-top-color: #1b435e;
+	background: #1b435e;
+}
+
+
+
 .menu_bar {
+
 
 	list-style:none;
 	text-align: center;
 	//background-color: #6C7A89;
-	position: absolute;
+	position: relative;
 	z-index: 1;
 	width: 100%;
 	border: 1px solid #6C7A89;
@@ -69,47 +127,14 @@ body {
 	}
 }
 
-.dogImg {
-	width: 32px;
-	height: 32px;
-	background-image: url("../images/dog.png");
-	position: absolute;
-	z-index:2;
-	margin-left: 220px;
 
-}
-
-.dogImg2 {
-	width: 32px;
-	height: 32px;
-	background-image: url("../images/dog.png");
-	position: absolute;
-	z-index:2;
-	margin-left: 1270px;
-
-}
 //po co ta strona
-#whatFor {
-	
-	width: 790px;
-	height: auto;
-	border-radius: 15px;
-	border: 5px solid #446CB3;
-	background-color: #E4F1FE;
-	color: black;
-	text-align: left;
-	margin: 50px 150px 0 150px;
-	padding: 20px 5px 20px 5px;
-	font-size: 20px;
-	//opacity: 0.5;
-	position:absolute;
-	left: 250px;
-
-
+.container_whatFor {
+	display: flex;
+	justify-content: center;
 }
 
-//czy jestem gotowy na psa
-#whatShouldKnow {
+#whatFor {
 	
 	width: auto;
 	height: auto;
@@ -118,8 +143,41 @@ body {
 	background-color: #E4F1FE;
 	color: black;
 	text-align: left;
-	margin: 50px 150px 20px 150px;
+	margin: 100px  0 ;
 	padding: 20px 5px 20px 5px;
+	font-size: 20px;
+	//opacity: 0.5;
+	position:absolute;
+	left: 250px;
+
+	
+
+}
+
+
+#collage {
+	width: 650px;
+	height: 350px;
+	position: center;
+	margin: 0 auto;
+	//left: 350px;
+	position: relative;
+	margin-top: 250px;
+	
+
+}
+//czy jestem gotowy na psa
+#whatShouldKnow {
+	
+	width: 70%;
+	height: auto;
+	border-radius: 15px;
+	border: 5px solid #446CB3;
+	background-color: #E4F1FE;
+	color: black;
+	text-align: left;
+	margin: 20px 200px 20px 100px;
+	padding: 10px 15px 10px 15px;
 	float: right;
 	font-size: 23px;
 	line-height: 40px;
@@ -165,7 +223,8 @@ footer {
 
 	min-height: 100%;
 	margin: 0 auto;
-
+	//display: flex;
+	//justify-content: center;
 
 }
 //pomocne linki
@@ -177,7 +236,7 @@ footer {
 	border-radius: 15px;
 	border: 5px solid #446CB3;
 	background-color: #E4F1FE;
-	margin: 50px 150px 0 150px;
+	margin: 150px 150px 0 150px;
 	padding: 20px 5px 20px 5px;
 	font-size: 20px;
 	position: absolute;
@@ -207,17 +266,20 @@ footer {
 
 }
 
-#collage {
 
-	width: 650px;
-	height: 350px;
-	position: center;
-	margin: 250px 150px 0 150px;
-	left: 350px;
-	position: relative;
-}
 
 //zdjęcia z głównej
+
+.photo {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+	a {
+		display: flex;
+	}
+}
+
 #dog3 {
 	display: flex;
 	width: 550px;
@@ -289,12 +351,13 @@ footer {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	margin-top: 120px;
 
 }
 
 #female {
 	display: flex;
-	margin-top: 70px;
+	margin-top: 10px;
 	margin-right: 10px;
 	@include nameGeneratorbutton ;
 	background-image: url("../images/she.png");
@@ -316,7 +379,7 @@ footer {
 	width: 200px;
 	height: 70px;
 	color: black;
-	margin-top: 270px;
+	margin-top: 170px;
 	font-size: 45px;
 	display: flex;
 	border-radius: 15px;
@@ -332,7 +395,7 @@ footer {
 #male {
 	display: flex;
 	
-	margin-top: 70px;
+	margin-top: 10px;
 	@include nameGeneratorbutton ;
 	background-image: url("../images/he.png");
 	background-size: cover;
@@ -352,6 +415,13 @@ footer {
 	display: inline-block;
 
 }
+.div-generator p:hover {
+	margin-top: 250px;
+	display: inline-block;
+	width: 380px;
+
+}
+
 
 .rslides {
 	position: relative;

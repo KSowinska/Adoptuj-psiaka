@@ -65,16 +65,27 @@ var randomIndexMale = Math.round(Math.random() * maleArray.length -1 );
 
 
 
+//menu
 
+var btn = $("nav button");
+var navUl = $("nav ul");
 
+//console.log(btn, navUl);
 
+if (window.matchMedia("max-width:374px")) {
+	btn.on("click" , function() {
 
-
-
-
-
-
-
-
+		navUl.toggle("showMenu");
 	});
+
+}
+
+
+
+
+
+
+
+
+});
 
