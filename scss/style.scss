@@ -27,61 +27,71 @@ body {
 	
 }
 
-///tutaj klasa do wyswietlania menu
-nav ul.showMenu {
-	display: block;
+.hamburger {
+	width: 40px;
+	height: 35px;
+	border: 0;
+	border-top: 5px solid #ffffff;
+	background: transparent;
+	position: relative;
+	transition: 0.3s transform linear;
+
+
 }
 
-@media (min-width: 375px) {
-	nav ul{
+.hamburger::before, .hamburger::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-top: 5px solid #ffffff;
+	transform: translateY(10px);
+}
+
+.hamburger::after {
+	transform: translateY(25px);
+	transition: 0.3s transform linear;
+}
+
+.hamburger:focus {
+	transform: rotate(45deg) translateY(5px);
+	border: none;
+}
+
+.hamburger:focus::after {
+	transform: rotate(-90deg) translateX(-10px);
+}
+
+
+
+
+
+@media (max-width: 375px) {
+
+	nav ul.invisible {
+		display: none;
+	}
+	nav ul.showMenu {
 		display: block;
 	}
-
-
 	nav ul	li {
 		display: inline-block;
 	}
 
-	button {
-		display: none;
+	.hamburger {
+		display: block;
 	}
 }
 
+@media (min-width: 376px) {
 
-nav button {
-	margin: 10px 0 0 10px;
-	
-	border-top: 1px solid #7d95a3;
-	background: #e3e3e3;
-	background: -webkit-gradient(linear, left top, left bottom, from(#dedede), to(#e3e3e3));
-	background: -webkit-linear-gradient(top, #dedede, #e3e3e3);
-	background: -moz-linear-gradient(top, #dedede, #e3e3e3);
-	background: -ms-linear-gradient(top, #dedede, #e3e3e3);
-	background: -o-linear-gradient(top, #dedede, #e3e3e3);
-	padding: 8.5px 17px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-	-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-	box-shadow: rgba(0,0,0,1) 0 1px 0;
-	text-shadow: rgba(0,0,0,.4) 0 1px 0;
-	color: #2b1e2b;
-	font-size: 12px;
-	font-family: Georgia, serif;
-	text-decoration: none;
-	vertical-align: middle;
-}
-nav button :hover {
-	border-top-color: #9ba6ad;
-	background: #9ba6ad;
-	color: #0f080f;
-}
-nav button :active {
-	border-top-color: #1b435e;
-	background: #1b435e;
-}
+	.hamburger {
+		visibility: hidden;
+	}
 
+
+}
 
 
 .menu_bar {
@@ -163,7 +173,7 @@ nav button :active {
 	margin: 0 auto;
 	//left: 350px;
 	//position: relative;
-	margin-top: 150px;
+	margin-top: 100px;
 	
 
 }
@@ -181,7 +191,7 @@ nav button :active {
 	text-align: left;
 	margin: 20px 200px 20px 100px;
 	padding: 10px 15px 10px 15px;
-	float: right;
+	//float: right;
 	font-size: 23px;
 	line-height: 40px;
 
@@ -299,7 +309,7 @@ footer {
 #dog3 {
 	
 	//width: 550px;
-	width: 70%;
+	width: 65%;
 	//height: 420px;
 	margin-top: 50px;
 }
@@ -307,7 +317,7 @@ footer {
 #batman {
 	
 	//width: 550px;
-	width: 70%;
+	width: 65%;
 	//height: 420px;
 	margin-top: 55px;
 
