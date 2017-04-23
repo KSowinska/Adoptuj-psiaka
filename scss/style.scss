@@ -19,7 +19,7 @@ section {
 
 body {
 	
-	background-image: url("../images/dogpaws.jpg");
+	background-image: url("../images/dogpaws-min.jpg");
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -391,7 +391,7 @@ footer {
 	
 	text-decoration: none;
 	
-	width: 290px;
+	width: 320px;
 } 
 
 #dogname {
@@ -425,19 +425,20 @@ footer {
 
 #male:hover {
 	
-	width: 280px;
+	width: 300px;
 	text-decoration: none;
 } 
 
-.div-generator p {
+.articleGenerator button p {
 	margin-top: 250px;
 	display: inline-block;
+	
 
 }
-.div-generator p:hover {
+.articleGenerator button p:hover {
 	margin-top: 250px;
 	display: inline-block;
-	width: 380px;
+	width: 300px;
 
 }
 
