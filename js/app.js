@@ -70,7 +70,7 @@ var randomIndexMale = Math.round(Math.random() * maleArray.length -1 );
 var btn = $("nav button");
 var navUl = $("nav ul");
 
-console.log(btn, navUl);
+
 
 if (window.matchMedia("max-width:375px")) {
 	btn.on("click" , function() {
@@ -78,10 +78,7 @@ if (window.matchMedia("max-width:375px")) {
 		navUl.toggle("showMenu");
 	});
 
-}
-
-
-
+} 
 
 
 
@@ -89,4 +86,8 @@ if (window.matchMedia("max-width:375px")) {
 
 
 });
+
+
+
+
 
