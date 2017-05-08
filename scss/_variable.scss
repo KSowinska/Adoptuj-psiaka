@@ -1,15 +1,19 @@
 $main_font:  'Caveat Brush', cursive;
+$border: 5px solid #497A9F ;
+$text_background: #C1D8EA;
+$font_color: #134367;
+$quiz_background: #5462AA;
 
 
 
-@mixin fontFace($family,$src,$style: normal,$weight: bold) {
+@mixin fontFace($family,$src,$style: normal,$weight: bold ) {
 	@font-face {
 		font-family: $family;
 		
 		src: url('../fonts/puppybellies-webfont.woff2') format('woff2'), 
 		url('../fonts/puppybellies-webfont.woff') format('woff');
 
-
+		
 		font-style: $style;
 		font-weight: $weight;
 	}
@@ -19,9 +23,9 @@ $main_font:  'Caveat Brush', cursive;
 @mixin nameGeneratorbutton {
 	-webkit-border-radius: 15;
 	-moz-border-radius: 15;
-	border-radius: 15px;
+	border-radius: 5%;
 	color: black;
-	font-size: 20px;
+	font-size: 25px;
 
 	background: #2574A9;
 	padding: 10px 20px 10px 20px;
