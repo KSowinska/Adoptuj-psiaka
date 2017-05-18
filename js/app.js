@@ -341,7 +341,7 @@ $("body").on("click", ".quizButton", function() {
 		} else {
 			index++;
 			collectedAnswers.push(dataText);
-			console.log(collectedAnswers, collectedAnswers.length);
+			//console.log(collectedAnswers, collectedAnswers.length);
 			createQuestion();
 			$(this).parent().hide();
 			$(this).parent().prev().hide();
